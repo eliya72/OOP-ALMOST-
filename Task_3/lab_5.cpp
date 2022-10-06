@@ -69,10 +69,10 @@ public:
     out_radius++;
     return for_pointer;
   }
-  
+  friend std::ostream &operator << (std::ostream &for_pointer, Smile &obj);
 };
 
-std::ostream &operator<<(std::ostream &for_pointer, Smile &obj)
+std::ostream &operator << (std::ostream &for_pointer, Smile &obj)
 {
   for_pointer << "In radius: " << obj.getIn_Radius() << ";  Out radius: " << obj.getOut_Radius() << ";  Area: " << obj.getArea();
   return for_pointer;
