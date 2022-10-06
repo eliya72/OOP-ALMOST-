@@ -51,8 +51,8 @@ public:
 
   Smile operator+(Smile &object)
   {
-    Smile result(in_radius + object.getIn_Radius(), out_radius + object.getOut_Radius());
-    return result;
+    Smile new_smile(in_radius + object.getIn_Radius(), out_radius + object.getOut_Radius());
+    return new_smile;
   }
 
   Smile operator++()
