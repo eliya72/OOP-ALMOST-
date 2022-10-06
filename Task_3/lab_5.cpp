@@ -44,7 +44,7 @@ public:
     out_radius = R;
   }
 
-  void print()
+  void print_over()
   {
     std::cout << "in radius: " << getIn_Radius() << ";  out radius: " << getOut_Radius() << ";  Area: " << getArea() << std::endl;
   }
