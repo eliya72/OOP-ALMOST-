@@ -46,7 +46,7 @@ public:
 
   void print()
   {
-    std::cout << "in radius: " << getIn_Radius() << ";  out radius: " << getOut_Radius() << ";  Volume: " << getArea() << std::endl;
+    std::cout << "in radius: " << getIn_Radius() << ";  out radius: " << getOut_Radius() << ";  Area: " << getArea() << std::endl;
   }
 
   Smile operator+(Smile &object)
