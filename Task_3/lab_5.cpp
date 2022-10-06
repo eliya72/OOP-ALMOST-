@@ -9,8 +9,6 @@ private:
 public:
   Smile(float r, float R)
   {
-    r = r > 0 ? r : 0;
-    R = R > 0 ? R : 0;
     in_radius = r;
     out_radius = R;
   }
@@ -38,13 +36,11 @@ public:
 
   void setIn_Radius(float r)
   {
-    r = r > 0 ? r : 0;
     in_radius = r;
   }
 
   void setOut_Radius(float R)
   {
-    R = R > 0 ? R : 0;
     out_radius = R;
   }
 
@@ -53,9 +49,9 @@ public:
     std::cout << "in radius: " << getIn_Radius() << ";  out radius: " << getOut_Radius() << ";  Volume: " << getArea() << std::endl;
   }
 
-  Smile operator+(Smile &other)
+  Smile operator+(Smile &object)
   {
-    Smile result(in_radius + other.getIn_Radius(), out_radius + other.getOut_Radius());
+    Smile result(in_radius + object.getIn_Radius(), out_radius + object.getOut_Radius());
     return result;
   }
 
@@ -88,8 +84,10 @@ int main()
   Smile rad_Rad_1(2, 4);
   Smile rad_Rad_2(2, 4);
   Smile rad_Rad_sum = rad_Rad_1 + rad_Rad_2;
-  std::cout << "++in radius ++out radius: " << rad_Rad_1 << std::endl;
-  std::cout << "default in and out radius" << rad_Rad_2 << std::endl;
-  std::cout << "sum of two default in and out radiuses: " << rad_Rad_sum << std::endl;
+  std::cout << "default in and out radiuses 1: \n" << rad_Rad_1 << std::endl;
+  std::cout << "default in and out radiuses 2: \n" << rad_Rad_2 << std::endl;
+  std::cout << "sum of two default in and out radiuses: \n" << rad_Rad_sum << std::endl;
+  Smile rad_Rad_adder = ++rad_Rad_1;
+  std::cout << "++in radius ++out radius: \n" << rad_Rad_adder << std::endl;
   return 0;
 }
