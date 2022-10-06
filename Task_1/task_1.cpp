@@ -29,11 +29,11 @@ public:
     float getEyesRadius(){
         return r;
     }
-    void setBodyRadius(float radius){
-        R = radius;
+    void setBodyRadius(float in_radius){
+        R = in_radius;
     }
-    void setEyeRadius(float radius){
-        r = radius;
+    void setEyeRadius(float in_radius){
+        r = in_radius;
     }
 };
 
@@ -42,10 +42,10 @@ Smile::Smile(){
     cout << "Конструктор без параметрів" << a << endl;
 }
 
-Smile::Smile(float radius, float radiusEye){
-    R = radius; 
+Smile::Smile(float in_radius, float radiusEye){
+    R = in_radius; 
     r = radiusEye;
-    cout << "Конструктор із парамерами" << radius << endl;
+    cout << "Конструктор із парамерами" << in_radius << endl;
 }
 
 Smile::~Smile(){
