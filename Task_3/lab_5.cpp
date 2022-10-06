@@ -69,8 +69,7 @@ public:
     out_radius++;
     return for_pointer;
   }
-
-  friend std::ostream &operator<<(std::ostream &for_pointer, Smile &obj);
+  
 };
 
 std::ostream &operator<<(std::ostream &for_pointer, Smile &obj)
