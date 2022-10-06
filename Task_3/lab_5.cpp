@@ -1,7 +1,6 @@
 #include <iostream>
 #define PI 3.14159
 
-
 class Smile{
 private:
   float in_radius;
