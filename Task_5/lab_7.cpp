@@ -70,7 +70,6 @@ public:
     std::string r;
     while (n != 0)
     {
-      // unsigned int d = n % 16;
       r = digits[n % 16] + r;
       n /= 16;
     }
