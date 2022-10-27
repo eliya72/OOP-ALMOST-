@@ -145,6 +145,6 @@ int main()
 {
     FinalExam proba("Loser", "20000", "001", "by Government");
     proba.print();
-    Hire people("Lev", "10", "Producer");
+    Hire people("Vel", "10", "Producer");
     people.print();
 }
