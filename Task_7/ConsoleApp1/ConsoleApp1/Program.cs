@@ -19,7 +19,8 @@ namespace MyNamespace
         {
             if (apex < 3 || radius < 1.0)
             {
-                throw new ArgumentException("Error (apex < 3 || radius < 1.0)");
+                Console.Write("Error (apex < 3 || radius < 1.0)");
+                Environment.Exit(0);
             }
 
             Apex = apex;
