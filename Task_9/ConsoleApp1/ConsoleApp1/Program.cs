@@ -23,9 +23,9 @@ namespace code
     {
         private static void Handler(ConsoleKeyInfo sign)
         {
-            var l = sign.KeyChar;
-            if (l == 'l' || l == 'L')
-                Console.WriteLine($"Eliya, pressed '{l}'");
+            var e = sign.KeyChar;
+            if (e == 'e' || e == 'E')
+                Console.WriteLine($"Eliya, pressed '{e}'");
         }
 
         private static double FunctionOne(double x)
