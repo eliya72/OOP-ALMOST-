@@ -64,8 +64,8 @@ class Program
         int Unit = 0;
         List<Weapons> quantity = new List<Weapons>
         {
-            new ColdWeapons("Knife", 10, 2),
-            new FireWeapons("Rifle", 60, 2)
+            new ColdWeapons("Cold","Knife", 10, 2),
+            new FireWeapons("Fire", "Knife", "Rifle", 60, 2)
         }; //список покажчиків на базовий клас
 
         foreach (Weapons count in quantity)
