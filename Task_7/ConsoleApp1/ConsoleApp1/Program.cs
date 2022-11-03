@@ -33,12 +33,12 @@ namespace MyNamespace
                 $"Apex: {Apex}, Radius: {Radius}, Area: {Math.Round(Area, 2)}";
         }
 
-        public static bool operator !=(RegularPolygon one, RegularPolygon two)
+        public static bool operator != (RegularPolygon one, RegularPolygon two)
         {
             return !one.Equals(two);
         }
 
-        public static bool operator ==(RegularPolygon one, RegularPolygon two)
+        public static bool operator == (RegularPolygon one, RegularPolygon two)
         {
             return one.Equals(two);
         }
