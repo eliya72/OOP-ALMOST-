@@ -53,7 +53,7 @@ class Program
         }
         public override void display()
         {
-            Console.WriteLine($"{Name}, duration: {Length}:{Thickness}\n\tCold Weapon = {NameOfColdWeapons}, Fire Weapon = {NameOfFireWeapons}");
+            Console.WriteLine($"{Name}, parameters: {Length}:{Thickness}\n\tCold Weapon = {NameOfColdWeapons}, Fire Weapon = {NameOfFireWeapons}");
         }
 
     }
