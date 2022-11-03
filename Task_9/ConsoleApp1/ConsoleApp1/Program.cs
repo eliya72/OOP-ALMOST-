@@ -3,9 +3,9 @@ using System;
 
 namespace code
 {
-    delegate double Amount(double x);
+    public delegate double Amount(double x);
 
-    delegate void MyEvent(ConsoleKeyInfo sign);
+    public delegate void MyEvent(ConsoleKeyInfo sign);
 
      class MyEventClass
     {
