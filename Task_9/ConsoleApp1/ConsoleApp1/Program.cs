@@ -62,7 +62,7 @@ namespace code
 
         private static void Main()
         {
-            const double a = 20;
+            const double a = 2;
             const double b = 30;
 
             Console.WriteLine(Trapezoid(FunctionOne, a, b));
